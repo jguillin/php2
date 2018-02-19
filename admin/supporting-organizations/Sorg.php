@@ -1,7 +1,8 @@
 <?php
  
 class Sorg
-{
+{   
+    private $imagen;
     private $soId;
     private $name;
     private $address;
@@ -9,13 +10,14 @@ class Sorg
     private $website;
     private $email;
 
-     function __construct($soId, $name, $address, $phone, $website, $email) {
+     function __construct($imagen, $soId, $name, $address, $phone, $website, $email) {
        $this->soId = $soId;
        $this->name = $name;
        $this->address = $address;
        $this->phone = $phone;
        $this->website = $website;
        $this->email = $email;
+       $this->imagen = $imagens;
      }
 
 
@@ -64,6 +66,14 @@ class Sorg
      }
      function getEmail(){
        return $this->email;
+     }
+
+
+     function setImagen($imagen){
+       $this->imagen = $imagen;
+     }
+     function getImagen(){
+       return $this->imagen;
      }
 
 }

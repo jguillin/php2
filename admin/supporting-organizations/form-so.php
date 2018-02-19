@@ -47,7 +47,10 @@ if ($showForm){
         		<input class='form-TextBox' type="text" name="soId" readonly value="<?php echo $ObjSorg->getSoId(); ?>"/>
             <?php
           }
+
           ?>
+          <label>Imagen</label>
+            <input class='form-TextBox' type="file" name="imagen" value="<?php echo $ObjSorg->getImagen(); ?>"/>
     		<label>Name</label>
     		<input class='form-TextBox' type="text" name="name" autofocus required value="<?php echo $ObjSorg->getName(); ?>"/>
     		<label>Address</label>
